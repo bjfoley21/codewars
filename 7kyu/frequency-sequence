@@ -1,0 +1,22 @@
+//DESCRIPTION:
+//Your task is to return an output string that translates 
+//an input string s by replacing each character in s with a 
+//number representing the number of times that character 
+//occurs in s and separating each number with the sep character(s).
+
+function freqSeq(str, sep) {
+  const map = new Map();
+  for(let i=0; i<str.length; i++){
+    if(map.has(str.charAt(i))){
+      map.set(str.charAt(i), map.get(str.charAt(i))+1);
+    } else {
+      map.set(str.charAt(i), 1);
+    }
+  }
+  out = '';
+  for(let i=0; i<str.length-1; i++){
+    out = out + map.get(str.charAt(i)) + sep;
+  }
+  out = out + map.get(str.charAt(str.length-1))
+  return out;
+}
