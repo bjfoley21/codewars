@@ -3,6 +3,6 @@ function f(x,y,z){
     for(let i=0; i<Math.min(x,y,z); i++){
       sum += (x-i)*(y-i)*(z-i);
     }
-    //TODO: your code here
+    //TODO: your code heres
     return sum;
   }
