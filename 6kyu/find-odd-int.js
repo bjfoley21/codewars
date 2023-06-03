@@ -8,4 +8,4 @@ function findOdd(A) {
     if(obj[prop] % 2 !== 0) return Number(prop);
   }
 }
-////////////////////
+//////////////////////////
